@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="simulations.html">Simulations</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="things/CV.pdf">CV</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper style1">
+				<header class="major">
+					<h2>Simulations</h2>
+				</header>
+				<div class="container">
+						
+					<!-- Content -->
+						<section id="content">
+									<h4>In the beginning..</h4>
+									<p><span class="image left"><img src="images/CMB-image.jpg" alt="" /></span>... the energy-density distribution of the universe was very smooth. This makes it quite a comparatively easy thing to model, as we can use mathematical techniques known as perturbation theory to describe the small density fluctuations that permeated the universe shortly after the big bang. To give some idea of scale, the densest parts of the universe were approximately 1.00001 times more dense than the least dense parts. Due to the runaway nature of gravitational collapse, things were not destined to stay this way. Areas of the early universe that began as very slight overdensities accumulated more matter, and eventually the density variations become large enough that our mathematical approaches are no longer accurate; the density field has become non-linear. The universe today is incredibly non-linear, with vast cosmic voids dotted with points of extreme overdensity. The study of the evolution of the universe from this smooth initial state to the non-linear state we see today is referred to as the study of the large scale structure of the universe, and from it we can learn about fundamental properties of our universe; its geometry, its components, its age and its future.</p>
+									<p>Given that perturbation theory at some point become intractable, we need a way to model the universe in its non-linear state, and one of the techniques of doing this is to numerically simulate the process of structure growth. This involves distributing a large number of particles throughout a cube, and then evolving their positions and momenta according to the physics of whichever model we are trying to simulate. There are a number of state of the art codes available to do this, and my research focuses on a particular code called <a href="https://github.com/MP-Gadget/MP-Gadget">MP-Gadget</a>, which implements gravity and baryonic physics effects in an expanding universe. In addition to providing much needed modelling of the late-time universe, these simulations also allow us to view the universe in a unique way. We can observe galaxy formation and mergers that take place over billions of years in a matter of seconds, and we can directly image the dark matter clustering of large portions of the universe. This provides valuable insight and intuition for researchers, as well as producing amazing images of the structure of our universe.</p><p> Below you can find some visualisations of our simulations, showing the dark matter and gas clustering along the filaments of the cosmic web. The original images are available on my github page <a href="https://github.com/Chris-Pedersen/Chris-Pedersen.github.io/tree/master/visualisations">here</a>. Feel free to use them for whatever purpose, but please give credit if they are used in the public domain!</p>
+
+									<center><h5>Video fly-through visualising the dark matter clustering (watch in HD)</h5>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/zQum_DVQU_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+									<h5>Visualisations of the clustering of baryons</h5>
+									<span class="image fit"><img src="visualisations/baryons1.png" alt="" /></span>
+									<span class="image fit"><img src="visualisations/baryons2.png" alt="" /></span>
+									<span class="image fit"><img src="visualisations/baryons3.png" alt="" /></span>
+						</section>
+								
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="menu">
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</footer>
+
+	</body>
+</html>
