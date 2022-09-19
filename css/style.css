@@ -496,11 +496,31 @@
 			top: 0.25em;
 		}
 
+		.image.leftsmall {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.image.rightsmall {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
 
+		.image.leftsmall, .image.rightsmall {
+			max-width: 20%;
+		}
+
 			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+			.image.leftsmall img, .image.rightsmall img {
 				width: 100%;
 			}
 
