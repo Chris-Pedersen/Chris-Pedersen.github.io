@@ -84,23 +84,37 @@
 				<br>
 			</section>
 
-
-
 			<section id="content">
 				<div class="container">
 					<section id="content">
+						<section>
+							<br>
+							<header class="major">
+								<h3 style="text-align:right">Thermalizer: Stable neural emulation of spatiotemporal chaos</h3>
+								<p><div align="left"><span class="image leftsmall"><img src="images/project_images/kol_highres.png" alt=""/></span>
+									Chaotic dynamical systems are ubiquitous throughout science and engineering, and notoriously computationally expensive to model using numerical methods. Deep learning has been used to create fast, approximate models of chaotic systems in the form of autoregressive models, however such models are notoriously unstable over long timescales due to accumulation of errors, limiting practical applicability.
+								
+									<br><br>
+
+									In this work we introduce the <i>thermalizer</i>, a modified diffusion model framework that can be used to stabilise autoregressive rollouts on the fly, extending the time-horizon of stable predictions by orders of magnitude.
+									<br><br>
+									<i>Project ongoing...</i>
+								</div></p>
+						</section>
+						
+						<hr />
 
 						<section>
 							<br>
 							<header class="major">
-								<h3 style="text-align:left">AI-driven equation discovery for turbulence modelling</h3>
+								<h3 style="text-align:left">Deep learning models of subgrid dynamics</h3>
 								<p><div align="left"><span class="image rightsmall"><img src="images/project_images/turbulence_wiki.jpg" alt=""/></span>
 									Modelling the evolution of Earth's climate requires detailed simulations of the oceans and atmosphere. These simulations are extremely computationally expensive, and we are limited by computational resources in the small-scale dynamics that one can resolve. However, turbulence is a notoriously multi-scale phenomena, with small-scale eddies and vorticies affecting the large scale evolution of fluids. Therefore ocean simulations of finite resolution are missing these important effects.
-
-									In this project I am working on using novel machine learning techniques to discover new systems of equations that will enable low-resolution (and therefore computationally tractable) ocean simulations to include these small-scale turbulent effects.
+									<br><br>
+									In this project we develop coupled physics + deep learning models of turbulent flows, where the machine learning component models the unresolved, subgrid dynamics, enabling accurate, coarse resolution simulations. In particular, we demonstrate how the stability of these coupled models can be improved by augmenting the training procedure with a neural network emulator.
 								
 									<br><br>
-									<i>Project ongoing..</i>
+									<i><a href="https://arxiv.org/abs/2307.13144">Published at ICML 2023: Synergy of Scientific and Machine Learning Modeling Workshop</a></i>
 								</div></p>
 						</section>
 						
@@ -114,7 +128,7 @@
 									<br><br>
 									By grouping genes into subgraphs using biological prior knowledge, and using sparse connections between these graphs, we are building a binary classification model of prostate cancer tumors, which will predict whether or not a tumor is metaststic based on it's genetic markers. The motivation behind the graph network is to enable increased generalisability, and the sparse connections reduce the number of parameters of the model, enabling training on the small datasets available.
 									<br><br>
-									<i>Project ongoing..</i>
+									<i><a href="https://arxiv.org/abs/2309.16645">Submitted to Nature Machine Intelligence</a></i>
 								
 								</div></p>
 						</section>
@@ -146,7 +160,7 @@
 									<br><br>
 									Whilst this information is extremely valuable, analysis of the Lyman-alpha forest is a highly complicated task, requiring expensive hydrodynamical simulations, and marginalisation over uncertain astrophysical effects which the absorption features we observe also depend on. Only a small number of groups have the expertise and scope required to perform this analysis. As a result of these obstacles, results from the Lyman-alpha forest are underutilised in the joint analysis of cosmological observations. In this work, we tackle this problem by showing that the cosmological information in the Lyman-alpha forest can be compressed into marginalised constraints on just two parameters, in a model-independent way and with negligible loss of information. This will enable groups to include these valuable measurements in their analysis, without having to runn their own simulations or perform their own marginalisation, and will dramatically boost the scientific impact of current and future Lyman-alpha forest observations.
 									<br><br>
-									<i><a href="https://arxiv.org/abs/2209.09895">Submitted to ApJ</a></i>
+									<i><a href="https://iopscience.iop.org/article/10.3847/1538-4357/acb433/meta">Published in the Astrophysical Journal</a></i>
 						</section>
 
 						<hr />
@@ -214,7 +228,7 @@
 									<li>Linux/bash</li>
 									<li>High performance/parallel computing</li>
 									<li>git/github</li>
-									<li>PyTorch, TensorFlow, Keras</li>
+									<li>PyTorch, TensorFlow, Jax</li>
 								</ul>
 							</div>
 						    <div class="4u 6u$(2) 12u$(3)">
@@ -224,7 +238,8 @@
 									<li>Markov chain Monte Carlo, Metropolis Hastings sampling</li>
 									<li>Gaussian processes</li>
 									<li>Linear regression, logistic regression</li>
-									<li>Deep neural nets, convolutional neural nets, autoencoders</li>
+									<li>Convolutional neural networks, vision transformers</li>
+									<li>Generative modelling: VAE, diffusion models</li>
 									<li>Graph neural networks/message passing networks</li>
 									<li>Scattering transform</li>
 								</ul>
